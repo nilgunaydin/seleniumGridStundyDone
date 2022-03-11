@@ -15,8 +15,8 @@ public class Grid03 {
         cap.setVersion("98.0.4758.102");
         ChromeOptions options=new ChromeOptions();
         options.merge(cap);
-
-        WebDriver driver =new RemoteWebDriver(new URL("http://192.168.1.31:4444"),options);
+String url = "http://192.168.1.31:4444";
+        WebDriver driver =new RemoteWebDriver(new URL(url),options);
 
         driver.get("https://www.google.com");
 
